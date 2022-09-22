@@ -1,8 +1,8 @@
 use anchor_lang::prelude::*;
 
-
+#[account()]
 pub struct DepositMarket {
-    pub version: u16
+    pub version: u16,
 }
 
 impl DepositMarket {

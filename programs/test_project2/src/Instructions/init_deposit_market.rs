@@ -9,8 +9,8 @@ pub struct InitDepositMarket <'info> {
 }
 
 
-pub fn Handler (ctx: Context <InitDepositMarket>) -> Result <()> {// this is like main func.
-    let deposit_market_data = &mut ctx.deposit_market;
+pub fn handler (ctx: Context <InitDepositMarket>) -> Result <()> {// this is like main func.
+    let deposit_market_data = &mut ctx.accounts.deposit_market;
     deposit_market_data.version = 0;
     Ok (()) 
 }

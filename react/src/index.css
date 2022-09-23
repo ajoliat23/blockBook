@@ -1,5 +1,7 @@
 html{
-  background-color: #000000;
+  background-image: linear-gradient(to bottom right, black, rgb(107, 6, 109));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color:rgb(237, 1, 241);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;

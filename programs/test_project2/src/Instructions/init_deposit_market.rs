@@ -15,5 +15,10 @@ pub fn handler (ctx: Context <InitDepositMarket>) -> Result <()> {// this is lik
     Ok (()) 
 }
 
+pub fn incrementVersion (ctx: Context <InitDepositMarket>) ->Result<()> {
+    let deposit_market_data = &mut ctx.accounts.deposit_market;
+    deposit_market_data.version = deposit_market_data.version + 1;
+    Ok (()) 
+}
 // how to use boxes: pub deposit_market: Box <Account <'info, DepositMarket>> // account that is a DepositMarket
 // this allocates to heap instead of stack when out of space

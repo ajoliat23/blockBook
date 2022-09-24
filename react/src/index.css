@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 html {
   background-color: #000000;
   color: rgb(237, 1, 241);
+=======
+html{
+  background-image: linear-gradient(to bottom right, black, rgb(107, 6, 109));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:rgb(237, 1, 241);
+>>>>>>> e2c2470951beaf094fb960a2f7b569fecc6a6bab
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;
 }
@@ -80,6 +88,7 @@ p {
   width: 100%
 }
 
+<<<<<<< HEAD
 .col1 {
   width: 75%;
 }
@@ -87,3 +96,8 @@ p {
 .nft_img {}
 
 .search_bar {}
+=======
+.col1{
+  width:75%;
+}
+>>>>>>> e2c2470951beaf094fb960a2f7b569fecc6a6bab

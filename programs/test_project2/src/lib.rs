@@ -13,6 +13,13 @@ pub mod test_project2 {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         Ok(())
     }
+
+    pub fn init_deposit_market(ctx: Context<InitDepositMarket>) -> Result<()> {
+        Instructions::init_deposit_market::handler(ctx)
+    }
+    pub fn increment_version(ctx: Context<InitDepositMarket>) -> Result<()> {
+        Instructions::init_deposit_market::incrementVersion(ctx)
+    }
 }
 
 #[derive(Accounts)]

@@ -1,103 +1,95 @@
-<<<<<<< HEAD
-html {
+<<<<<<< HEAD html {
   background-color: #000000;
   color: rgb(237, 1, 241);
-=======
-html{
-  background-image: linear-gradient(to bottom right, black, rgb(107, 6, 109));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color:rgb(237, 1, 241);
->>>>>>> e2c2470951beaf094fb960a2f7b569fecc6a6bab
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 7em;
-}
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  border-bottom: 1px solid rgb(71, 55, 72);
-}
+  =======html {
+    background-image: linear-gradient(to bottom right, black, rgb(107, 6, 109));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(237, 1, 241);
+    >>>>>>>e2c2470951beaf094fb960a2f7b569fecc6a6bab font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 7em;
+  }
 
-.midCol {
-  text-align: center;
-  border-radius: 25px;
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(71, 55, 72);
+  }
 
-}
+  .midCol {
+    text-align: center;
+    border-radius: 25px;
 
-a {
-  color: rgb(244, 103, 247);
-  padding: 2em;
-  text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: large;
-}
+  }
 
-a:hover {
-  color: rgb(237, 1, 241);
-}
+  a {
+    color: rgb(244, 103, 247);
+    padding: 2em;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+  }
 
-#logo {
-  padding: 2em;
-}
+  a:hover {
+    color: rgb(237, 1, 241);
+  }
 
-.trade {
-  margin: auto;
-  padding: 1em;
-  background-color: rgb(71, 55, 72);
-  width: 20%;
-  border-radius: 25px;
+  #logo {
+    padding: 2em;
+  }
 
-}
+  .trade {
+    margin: auto;
+    padding: 1em;
+    background-color: rgb(71, 55, 72);
+    width: 20%;
+    border-radius: 25px;
 
-.tradeInput {
-  margin: 2em;
-  border-radius: 25px;
-  width: 100px;
-  height: 30px;
-}
+  }
 
-.currency {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .tradeInput {
+    margin: 2em;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+  }
 
-img {
-  padding: 1em;
-}
+  .currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.currencyImg {
-  border-radius: 40px;
-}
+  img {
+    padding: 1em;
+  }
 
-p {
-  text-align: center;
-}
+  .currencyImg {
+    border-radius: 40px;
+  }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  width: 100%
-}
+  p {
+    text-align: center;
+  }
 
-<<<<<<< HEAD
-.col1 {
-  width: 75%;
-}
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%
+  }
 
-.nft_img {}
+  .col1 {
+    width: 75%;
+  }
 
-.search_bar {}
-=======
-.col1{
-  width:75%;
-}
->>>>>>> e2c2470951beaf094fb960a2f7b569fecc6a6bab
+  .nft_img {}
+
+  .search_bar {}

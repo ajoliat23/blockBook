@@ -22,7 +22,7 @@ const initialDetails = [
     },
     {
         id: 4,
-        imgPath: "/exampleNFTs/person.png",
+        imgPath: "/exampleNFTs/person.jpg",
         name: "8 Bit Person",
         description: "Example Description",
         owner: "Lexi Joliat",

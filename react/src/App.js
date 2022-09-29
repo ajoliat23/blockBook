@@ -4,7 +4,7 @@ import About from './About';
 import Wallet from './Wallet';
 import Connect from './Connect';
 import Footer from './components/Footer';
-import ConnectWalletBTN from './components/MyComponent';
+import MyComponent from './components/MyComponent';
 import React, { useMemo } from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import { useWalletModal } from '@solana/wallet-adapter-react-ui';
@@ -23,10 +23,11 @@ import {
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import {
+  WalletConnectButton,
   WalletDisconnectButton,
   WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
-
+import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import './App.css';
 
 // import the styles
@@ -53,6 +54,8 @@ function App() {
   
 );
 
+    const { connection } = useConnection();
+    const { publicKey, sendTransaction } = useWallet();
 
   return (
     
@@ -64,7 +67,8 @@ function App() {
           <div className ="App">
             <div className='nav'>
               <Navbar />
-              <ConnectWalletBTN onClick={()=>setVisible(true)}/>
+              <WalletMultiButton onClick={()=>alert("clicked the button")}/>
+                          
             </div>
             
             

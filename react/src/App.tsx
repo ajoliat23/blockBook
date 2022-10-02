@@ -7,7 +7,8 @@ import Footer from './components/Footer';
 import MyComponent from './components/MyComponent';
 import React, { useMemo } from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import { useWalletModal } from '@solana/wallet-adapter-react-ui';
+
+//---------------------Wallet imports---------------------------------------
 import { clusterApiUrl } from '@solana/web3.js';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
@@ -22,40 +23,33 @@ import {
 } from '@solana/wallet-adapter-wallets';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
-import {
-  WalletConnectButton,
-  WalletDisconnectButton,
-  WalletMultiButton
-} from '@solana/wallet-adapter-react-ui';
-import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+
 import './App.css';
 
 // import the styles
 require('@solana/wallet-adapter-react-ui/styles.css');
-
+//--------------------------------wallet imports end------------------------------------------------
 
 function App() {
  // you can use Mainnet, Devnet or Testnet here
- const solNetwork = WalletAdapterNetwork.Mainnet;
- const endpoint = useMemo(() => clusterApiUrl(solNetwork), [solNetwork]);
+ const network = WalletAdapterNetwork.Mainnet;
+ const endpoint = useMemo(() => clusterApiUrl(network), [network]);
  // initialise all the wallets you want to use
- const { setVisible } = useWalletModal();
  const wallets = useMemo(
-  () => [
-      new PhantomWalletAdapter(),
-      new GlowWalletAdapter(),
-      new SlopeWalletAdapter(),
-      new SolletWalletAdapter(),
-      new SolflareWalletAdapter({ solNetwork }),
-      new TorusWalletAdapter(),
-      new SolletExtensionWalletAdapter()
-  ],
-  [solNetwork]
-  
-);
+     () => [
+         new PhantomWalletAdapter(),
+         new GlowWalletAdapter(),
+         new SlopeWalletAdapter(),
+         new SolflareWalletAdapter({ network }),
+         new TorusWalletAdapter(),
+         //new LedgerWalletAdapter(),
+         new SolletExtensionWalletAdapter(),
+         new SolletWalletAdapter(),
+     ],
+     [network]
+ );
 
-    const { connection } = useConnection();
-    const { publicKey, sendTransaction } = useWallet();
+    
 
   return (
     
@@ -67,7 +61,7 @@ function App() {
           <div className ="App">
             <div className='nav'>
               <Navbar />
-              <WalletMultiButton onClick={()=>alert("clicked the button")}/>
+              <MyComponent/>
                           
             </div>
             
@@ -97,7 +91,7 @@ function App() {
       </WalletProvider>
   </ConnectionProvider>
 
-  );
+  )
 }
 
 export default App;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 
 
-const Home = () => {
+function Home(){
     return ( 
         <html >
             <div className='midCol'>
@@ -10,20 +10,20 @@ const Home = () => {
                 <div className='trade'>
                     <div className='currency'>
                         <img src="usd.jpg" width="40px" className='currencyImg'/>
-                        <label for="usd">USD</label>
+                        <label >USD</label>
                         <input type="text" id="usd" className='tradeInput'></input>
                     </div>
                     <img src="switchArrows.jpg"/>
                     <div className='currency'>
                         <img src="sol.jpg" width="40px" className='currencyImg'/>
-                        <label for="sol">SOL</label>
+                        <label >SOL</label>
                         <input type="text" id="sol" className='tradeInput'></input>
                     </div>
                 </div>
             </div>
             
         </html>
-     );
+     )
 }
  
 export default Home;

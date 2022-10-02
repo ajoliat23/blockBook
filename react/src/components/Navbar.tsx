@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Navbar = () => { //got this navbar stuff also from The Net Ninja
+function Navbar(){ //got this navbar stuff also from The Net Ninja
     return ( 
         <div className='navbar'>
             <img height= "100px" src="bb_logo.png" id="logo"/>
@@ -12,7 +12,7 @@ const Navbar = () => { //got this navbar stuff also from The Net Ninja
                 <Link to="/about">About</Link>
             </nav>
         </div>
-    );
+    )
 }
  
 export default Navbar;

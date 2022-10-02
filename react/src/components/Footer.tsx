@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Footer = () => { //got this navbar stuff also from The Net Ninja
+function Footer(){ //got this navbar stuff also from The Net Ninja
     return ( 
         <html>
             <div className='footer'>
@@ -9,7 +9,7 @@ const Footer = () => { //got this navbar stuff also from The Net Ninja
                 
             </div>
         </html>
-    );
+    )
 }
  
 export default Footer;

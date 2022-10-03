@@ -3,6 +3,7 @@ import Home from './Home';
 import About from './About';
 import Wallet from './Wallet';
 import Connect from './Connect';
+import NFTSearch from './NFTSearch';
 import Footer from './components/Footer';
 import MyComponent from './components/MyComponent';
 import React, { useMemo } from 'react';
@@ -79,6 +80,9 @@ function App() {
                 </Route>
                 <Route path = "/about">
                   <About/>
+                </Route>
+                <Route path="/nftsearch">
+                  <NFTSearch />
                 </Route>
             </Switch>
             

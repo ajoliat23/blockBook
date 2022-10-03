@@ -4,6 +4,7 @@ import About from './About';
 import Wallet from './Wallet';
 import Connect from './Connect';
 import NFTSearch from './NFTSearch';
+import TwitterClone from './TwitterClone';
 import Footer from './components/Footer';
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -29,6 +30,9 @@ function App() {
               <About />
             </Route>
             <Route path="/nftsearch">
+              <NFTSearch />
+            </Route>
+            <Route path="/twitterclone">
               <NFTSearch />
             </Route>
           </Switch>

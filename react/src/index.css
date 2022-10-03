@@ -6,8 +6,19 @@ html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;
 }
+<<<<<<< HEAD
+.nav{
+  position:fixed;
+  top:0;
+  margin-top:3em;
+  margin-right:2em;
+  right: 0;
+}
+.navbar{
+=======
 
 .navbar {
+>>>>>>> main
   position: fixed;
   top: 0;
   left: 0;

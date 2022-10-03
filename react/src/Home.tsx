@@ -13,7 +13,7 @@ function Home(){
                         <label >USD</label>
                         <input type="text" id="usd" className='tradeInput'></input>
                     </div>
-                    <img src="switchArrows.jpg"/>
+                    <img src="switchArrows.jpg" />
                     <div className='currency'>
                         <img src="sol.jpg" width="40px" className='currencyImg'/>
                         <label >SOL</label>
@@ -21,9 +21,9 @@ function Home(){
                     </div>
                 </div>
             </div>
-            
+
         </html>
      )
 }
- 
+
 export default Home;

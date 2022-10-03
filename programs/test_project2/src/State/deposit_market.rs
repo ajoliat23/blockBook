@@ -2,6 +2,7 @@ use anchor_lang::prelude::*;
 
 #[account()]
 pub struct DepositMarket {
+    pub signer: Pubkey,
     pub version: u16,
 }
 

@@ -6,7 +6,6 @@ html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;
 }
-<<<<<<< HEAD
 .nav{
   position:fixed;
   top:0;
@@ -15,18 +14,13 @@ html {
   right: 0;
 }
 .navbar{
-=======
-
-.navbar {
->>>>>>> main
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 100%;
-  border-bottom: 1px solid rgb(71, 55, 72);
+  
 }
 
 .midCol {

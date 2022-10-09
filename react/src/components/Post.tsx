@@ -1,15 +1,15 @@
-import { Avatar } from "@material-ui/core";
+import { Avatar } from "@mui/material";
 import {
     ChatBubbleOutline,
     FavoriteBorder,
     Publish,
     Repeat,
     VerifiedUser,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 import React from "react";
 import "./Post.css";
 
-function Post({ displayName, username, verified, text, image, avatar }) {
+function Post({ displayName, username, verified, text, image, avatar }: { displayName: any; username: any; verified: any; text: any; image: any; avatar: any }) {
     return (
         <div className="post">
             <div className="post__avatar">

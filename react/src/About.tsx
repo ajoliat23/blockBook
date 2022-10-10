@@ -6,7 +6,11 @@ function About() {
     
     return (
      <html>
-        <span>'We are a humble group of college students from JCU creating a dApp for our CS Capstone'</span>
+         <div id="about">
+            <img src='temp.png' width="500px"/>
+
+            <p>'We are a humble group of college students from JCU creating a dApp for our CS Capstone'</p>
+         </div>
      </html>
      )
 }

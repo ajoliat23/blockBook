@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({ NFT }) {
+function Card({ NFT }: { NFT: any }) {
     return (
         <div className="trade">
             <img className="img" alt={NFT.name} src={process.env.PUBLIC_URL + NFT.imgPath} />

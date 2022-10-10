@@ -1,10 +1,10 @@
 import React from "react";
 import "./TwitterClone.css";
-import Feed from "./Feed";
-import Sidebar from "./Sidebar";
-import Widgets from "./Widgets";
+import Feed from "./components/Feed";
+import Sidebar from "./components/Sidebar";
+import Widgets from "./components/Widgets";
 
-function App() {
+function TwitterClone() {
     return (
         <div className="app">
             <Sidebar />

@@ -34,10 +34,18 @@ function Home(){
 
   
 
-
+    //class name feed is going to be used for a RSS feed or some sort
+    //of dev news feed. Will be implemented this week -TS
 
     return ( 
         <html >
+
+            <div className='feed'>
+                
+
+            </div>
+
+
             <div className='midCol'>
                 <h1>Welcome to Block Book</h1>
                 <div className='trade'>

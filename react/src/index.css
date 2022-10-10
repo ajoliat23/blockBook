@@ -90,3 +90,8 @@ p {
 .col1 {
   width: 75%;
 }
+
+.center {
+  text-align:center;
+  display:block;
+}

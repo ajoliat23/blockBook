@@ -32,6 +32,16 @@ function Home(){
         return;
     }
 
+    function purchase() {
+        //ask George for help to make this
+        if(document.getElementById("usd").value == null) {
+            alert("Please Enter an Amount")
+        }
+        else {
+            alert("PURCHASE SOL PLS")
+        }
+    }
+
   
 
     //class name feed is going to be used for a RSS feed or some sort
@@ -54,6 +64,7 @@ function Home(){
                         <label >USD</label>
                         <input type="text" id="usd" className='tradeInput' placeholder={usdFill}/>
                         <button onClick={buttonPressed1}>Convert to SOL</button>
+                        <button onClick={purchase}>Purchase</button>
                     </div>
                     <img src="switch.png" width="40px" height="40px"/>
                     <div className='currency'>

@@ -1,0 +1,7 @@
+The .txt files contain queries that can be called against the database in order to attain information as how many likes a post has or simply to get the comment list. 
+
+To run these queries the files simply need to be called from the command line so we will have to decide if this is the method that we want to use or not. 
+
+
+ALSO :
+In terms of the database schema I simply created it in a way that made sense to me. If there are any objections or different perspectives that anyone would like to use just let me know.

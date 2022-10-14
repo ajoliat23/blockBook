@@ -94,7 +94,7 @@ p {
 .col1 {
   width: 75%;
 }
-
+/* search bar css from https://www.sliderrevolution.com/resources/css-search-box/ */
 .container {
   position: absolute;
   margin: auto;
@@ -207,4 +207,27 @@ p {
   color: white;
   opacity: 0.5;
   font-weight: bolder;
+}
+
+/* scroll bar css from https://www.digitalocean.com/community/tutorials/css-scrollbars */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(253, 133, 255) rgb(237, 1, 241);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(237, 1, 241);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(253, 133, 255);
+  border-radius: 20px;
+  border: 3px solid rgb(237, 1, 241);
 }

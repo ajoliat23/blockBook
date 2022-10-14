@@ -1,0 +1,5 @@
+//Get Like count on post
+SELECT COUNT(post_like_id)
+FROM post_likes
+WHERE post_id = (GRAB ID OF POST)
+

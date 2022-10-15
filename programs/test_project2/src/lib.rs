@@ -33,4 +33,8 @@ pub mod test_project2 {
     pub fn mint_token(ctx: Context<MintToken>, amount: u64) -> Result<()> {
         Instructions::mint_token::handler(ctx, amount)
     } 
+
+    pub fn transfer_token(ctx: Context<TransferToken>, amount: u64) -> Result<()> {
+        Instructions::transfer_token::handler(ctx, amount)
+    } 
 }

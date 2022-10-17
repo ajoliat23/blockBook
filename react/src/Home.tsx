@@ -48,11 +48,9 @@ function Home(){
     //of dev news feed. Will be implemented this week -TS
 
     return ( 
-        <html >
+        <html>
 
             <div className='feed'>
-                
-
             </div>
 
 
@@ -63,16 +61,16 @@ function Home(){
                         <img src="usd.jpg" width="40px" className='currencyImg' />
                         <label >USD</label>
                         <input type="text" id="usd" className='tradeInput' placeholder={usdFill}/>
-                        <button onClick={buttonPressed1}>Convert to SOL</button>
-                        <button onClick={purchase}>Purchase</button>
+                        <button onClick={buttonPressed1} className="button1">Convert to SOL</button>
                     </div>
                     <img src="switch.png" width="40px" height="40px"/>
                     <div className='currency'>
                         <img src="sol.jpg" width="40px" className='currencyImg'/>
                         <label >SOL</label>
                         <input type="text" id="sol" className='tradeInput' placeholder={solFill}/>
-                        <button onClick={buttonPressed2}>Convert to USD</button>
+                        <button onClick={buttonPressed2} className="button1">Convert to USD</button>
                     </div>
+                    <button onClick={purchase} className="button2">     Purchase    </button>
                 </div>
             </div>
 

@@ -44,7 +44,7 @@ function TweetBox() {
                     className="tweetBox__imageInput"
                 />
                 <Button onClick={sendTweet} type="submit" className="tweetBox__button">
-                    Tweet
+                    Post
                 </Button>
             </form>
         </div>

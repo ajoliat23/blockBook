@@ -1,6 +1,6 @@
 .tweetBox {
     padding-bottom: 10px;
-    border-bottom: 8px solid var(--twitter-background);
+    border-bottom: 8px solid rgb(237, 1, 241);
     padding-right: 10px;
 }
 
@@ -19,6 +19,8 @@
     margin-left: 20px;
     font-size: 20px;
     border: none;
+    background-color: grey;
+    color: rgb(237, 1, 241);
 }
 
 .tweetBox__input>input:focus {
@@ -26,7 +28,7 @@
 }
 
 .tweetBox__button {
-    background-color: var(--twitter-color) !important;
+    background-color: rgb(237, 1, 241) !important;
     border: none !important;
     color: white !important;
     font-weight: 700 !important;

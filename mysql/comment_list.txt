@@ -1,0 +1,5 @@
+//Get Comments on post
+SELECT post_comment 
+FROM post_comments, post_information
+WHERE post_comments.post_id = post_information.post_id 
+AND post_information.post_id = (GRAB ID OF POST)

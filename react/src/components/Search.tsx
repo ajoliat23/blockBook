@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Scroll from './Scroll';
 import SearchList from './SearchList';
 
-function Search({ details }) {
+function Search({ details }: { details: any }) {
 
     const [searchField, setSearchField] = useState("");
 
     const filteredNFTs = details.filter(
-        NFT => {
+        (NFT: { name: string; description: string; owner: string; }) => {
             return (
                 NFT
                     .name
@@ -25,7 +25,7 @@ function Search({ details }) {
         }
     );
 
-    const handleChange = e => {
+    const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setSearchField(e.target.value);
     };
 
@@ -40,15 +40,15 @@ function Search({ details }) {
     return (
         <section className="midcol">
             <div className="midcol">
-                <h2 className="midcol">Search for NFTs</h2>
             </div>
-            <div className="midcol">
+            <div className="container">
                 <input
                     className="midcol"
                     type="search"
-                    placeholder="Search"
+                    placeholder="Search..."
                     onChange={handleChange}
                 />
+                <div className="search"></div>
             </div>
             {searchList()}
         </section>

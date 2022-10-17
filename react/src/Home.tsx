@@ -65,7 +65,7 @@ function Home(){
                     </div>
                     <img src="switch.png" width="40px" height="40px"/>
                     <div className='currency'>
-                        <img src="sol.jpg" width="40px" className='currencyImg'/>
+                        <img src="sol.jpg" width="40px" className='currencyImg' />
                         <label >SOL</label>
                         <input type="text" id="sol" className='tradeInput' placeholder={solFill}/>
                         <button onClick={buttonPressed2} className="button1">Convert to USD</button>
@@ -75,7 +75,7 @@ function Home(){
             </div>
 
         </html>
-     )
+    )
 }
 
 export default Home;

@@ -25,7 +25,5 @@ pub fn handler (ctx: Context <InitDepositMarketAlt>, signer:Pubkey) -> Result <(
     deposit_market_data.signer = signer;
     deposit_market_data.version = 0;
     Ok (()) 
-
-
 }
 

@@ -19,12 +19,13 @@ pub fn SendPost (ctx: Context<SendPost>, topic: String, content: String) -> anch
     let clock: Clock = Clock::get().unwrap();
 
     // if topic.chars().count() > 50 {
-    //     return Err(ErrorCode::TopicTooLong.into())
+    //     return Err(ErrorCode::TopicTooLong::into())
     // }
 
     // if content.chars().count() > 280 {
     //     return Err(ErrorCode::ContentTooLong.into())
     // }
+
 
     post.author = *author.key;
     post.timestamp = clock.unix_timestamp;
@@ -32,4 +33,12 @@ pub fn SendPost (ctx: Context<SendPost>, topic: String, content: String) -> anch
     post.content = content;
 
     Ok(())
+}
+
+#[error_code]
+pub enum ErrorCode {
+    #[msg("The provided topic should be 50 characters long maximum.")]
+    TopicTooLong,
+    #[msg("The provided content should be 280 characters long maximum.")]
+    ContentTooLong,
 }

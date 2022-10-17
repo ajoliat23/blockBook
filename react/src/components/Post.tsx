@@ -7,7 +7,7 @@ import {
     VerifiedUser,
 } from "@mui/icons-material";
 import React from "react";
-import "../Post.css";
+import "./styling/Post.css";
 
 function Post({ displayName, username, verified, text, image, avatar }: { displayName: any; username: any; verified: any; text: any; image: any; avatar: any }) {
     return (

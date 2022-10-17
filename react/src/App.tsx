@@ -75,7 +75,7 @@ export const Wallet: FC = () => {
                             <Route path="about" element={<About />} />
                             <Route path="connect" element={<Connect />} />
                             <Route path="nftsearch" element={<NFTSearch />} />
-                            <Route path="twitterclone" element={<TwitterClone />} />
+                             {/*<Route path="twitterclone" element={<TwitterClone />} /> */}
                         </Routes>
                         <Footer />
                     </BrowserRouter>

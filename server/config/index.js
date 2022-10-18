@@ -55,17 +55,3 @@ db.query("INSERT INTO post_likes (post_id, post_author, post_liker)",[id, author
    console.log(result)
     });    
 });
-
-// Route to delete a post
-
-app.delete('/api/delete/:id',(req,res)=>{
-const id = req.params.id;
-
-db.query("DELETE FROM posts WHERE id= ?", id, (err,result)=>{
-if(err) {
-console.log(err)
-        } }) })
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on ＄{PORT}`)
-})

@@ -40,15 +40,15 @@ function Search({ details }: { details: any }) {
     return (
         <section className="midcol">
             <div className="midcol">
-                <h2 className="midcol">Search for NFTs</h2>
             </div>
-            <div className="midcol">
+            <div className="container">
                 <input
                     className="midcol"
                     type="search"
-                    placeholder="Search"
+                    placeholder="Search..."
                     onChange={handleChange}
                 />
+                <div className="search"></div>
             </div>
             {searchList()}
         </section>

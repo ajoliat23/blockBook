@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-
+import {GetPrice} from './components/SolanaPrice'
 
 var usdFill = null;
 var solFill = null;
-
+var convertRate:number = GetPrice();
 
 function Home(){
 
     function buttonPressed1() {
         var usd = document.getElementById("usd").value;
-        var convertRate = 35; //this is a place holder until api / live connection works
+         //this is a place holder until api / live connection works
         var sol = usd / convertRate;
 
 

@@ -1,11 +1,11 @@
 html {
-  background: linear-gradient(-45deg, blue, magenta, red, magenta);
+  background: linear-gradient(-45deg, black, #303030, purple, magenta);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
-  color: #502ea7;
+  color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;
 }
@@ -36,7 +36,7 @@ html {
 }
 
 a {
-  color: #502ea7;
+  color: white;
   padding: 2em;
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

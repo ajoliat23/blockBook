@@ -9,14 +9,14 @@ var convertRate:number = GetPrice();
 function Home(){
 
     function buttonPressed1() {
-        var usd = document.getElementById("usd").value;
+        var usd = (document.getElementById("usd") as HTMLInputElement).value;
          //this is a place holder until api / live connection works
         var sol = usd / convertRate;
 
 
-        document.getElementById("usd").value = "";
-        document.getElementById("sol").placeholder = sol;
-        document.getElementById("usd").placeholder = ""
+        (document.getElementById("usd") as HTMLInputElement).value = "";
+        (document.getElementById("sol") as HTMLInputElement).placeholder = sol;
+        (document.getElementById("usd") as HTMLInputElement).placeholder = ""
 
         return;
     }
@@ -26,9 +26,9 @@ function Home(){
         var convertRate = 35; //this is a place holder until api / live connection works
         var usd = sol * convertRate;
 
-        document.getElementById("sol").value = "";
-        document.getElementById("usd").placeholder = usd;
-        document.getElementById("sol").placeholder = ""
+        (document.getElementById("sol") as HTMLInputElement).value = "";
+        (document.getElementById("usd") as HTMLInputElement).placeholder = usd;
+        (document.getElementById("sol") as HTMLInputElement).placeholder = ""
 
         return;
     }

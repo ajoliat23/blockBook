@@ -1,5 +1,5 @@
 import React from "react";
-import "./TwitterClone.css";
+import "./styling/TwitterClone.css";
 import Feed from "./components/Feed";
 import Sidebar from "./components/Sidebar";
 import Widgets from "./components/Widgets";

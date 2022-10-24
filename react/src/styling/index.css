@@ -1,11 +1,13 @@
 html {
-  background: linear-gradient(-45deg, blue, magenta, red, magenta);
+  background-image: linear-gradient(black, #303030, purple, magenta);
   background-repeat: no-repeat;
   background-attachment: fixed;
+	/*animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, black, #303030, purple, magenta);
   background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-  color: #502ea7;
+  height: 100vh;
+*/
+  color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 7em;
 }
@@ -36,7 +38,7 @@ html {
 }
 
 a {
-  color: #502ea7;
+  color: white;
   padding: 2em;
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -252,6 +254,7 @@ p {
 }
 
 .button1{
+  background-color: rgba(0,0,0, 0.20);
   display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
@@ -261,21 +264,22 @@ p {
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:300;
-  color:rgb(71, 55, 72);
+  color:white;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
 }
 .button1:hover{
+  color: rgb(237, 1, 241);
   border-color: rgb(237, 1, 241);
 }
 .button1:active{
   color: rgb(237, 1, 241);
   border-color: black;
-
 }
 
 .button2{
+  background-color: rgba(0,0,0, 0.20);
   display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
@@ -285,18 +289,18 @@ p {
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:300;
-  color:rgb(71, 55, 72);
+  color: white;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
 }
 .button2:hover{
+  color: rgb(237, 1, 241);
   border-color: rgb(237, 1, 241);
 }
-.button1:active{
-  color: rgb(237, 1, 241);
-  border-color: black;
-
+.button2:active{
+  color: greenyellow;
+  border-color: greenyellow;
 }
 @media all and (max-width:30em){
 .button1{

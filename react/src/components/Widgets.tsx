@@ -5,7 +5,7 @@ import {
     TwitterShareButton,
     TwitterTweetEmbed,
 } from "react-twitter-embed";
-import "./styling/Widgets.css";
+import "../styling/Widgets.css";
 
 function Widgets() {
     return (

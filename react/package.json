@@ -1,10 +1,13 @@
 {
+  "homepage": "https://ajoliat23.github.io/blockBook",
   "name": "blockbook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
-    "@mui/material": "^5.10.9",
+    "@mui/material": "^5.10.8",
     "@solana/wallet-adapter-base": "^0.9.17",
     "@solana/wallet-adapter-react": "^0.15.19",
     "@solana/wallet-adapter-react-ui": "^0.9.17",
@@ -30,7 +33,8 @@
     "web-vitals": "^2.1.4"
   },
   "browser": {
-    "crypto": false
+    "crypto": false,
+    "stream": false
   },
   "scripts": {
     "start": "react-scripts start",

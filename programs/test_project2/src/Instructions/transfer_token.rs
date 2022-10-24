@@ -16,7 +16,7 @@ pub struct TransferToken<'info> {
     pub from_authority: Signer<'info>,
 }
 
-pub fn handler(ctx: Context<TransferToken>) -> Result<()> {
+pub fn handler(ctx: Context<TransferToken>, amount: u64) -> Result<()> {
     // Create the Transfer struct for our context
     let transfer_instruction = Transfer{
         from: ctx.accounts.from.to_account_info(),
@@ -29,7 +29,7 @@ pub fn handler(ctx: Context<TransferToken>) -> Result<()> {
     let cpi_ctx = CpiContext::new(cpi_program, transfer_instruction);
 
     // Execute anchor's helper function to transfer tokens
-    anchor_spl::token::transfer(cpi_ctx, 5)?;
+    anchor_spl::token::transfer(cpi_ctx, amount)?;
 
     Ok(())
 }

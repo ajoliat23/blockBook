@@ -1,8 +1,8 @@
 import React from 'react';
-import StackGrid from "react-stack-grid";
 
 function Card({ NFT }: { NFT: any }) {
     return (
+
         
         <div className="">
                
@@ -14,9 +14,8 @@ function Card({ NFT }: { NFT: any }) {
                         <p>Owner: {NFT.owner}</p>
                     </div>
             </div>
-            
+      
         </div>
-        
     );
 }
 

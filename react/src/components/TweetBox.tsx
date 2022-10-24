@@ -1,7 +1,7 @@
 import { Avatar, Button } from "@mui/material";
 import React, { useState } from "react";
 //import db from "./firebase";
-import "./styling/TweetBox.css";
+import "../styling/TweetBox.css";
 
 function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState("");
@@ -44,7 +44,7 @@ function TweetBox() {
                     className="tweetBox__imageInput"
                 />
                 <Button onClick={sendTweet} type="submit" className="tweetBox__button">
-                    Tweet
+                    Post
                 </Button>
             </form>
         </div>

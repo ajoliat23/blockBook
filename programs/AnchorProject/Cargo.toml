@@ -1,12 +1,12 @@
 [package]
-name = "test_project2"
+name = "AnchorProject"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "test_project2"
+name = "anchor_project"
 
 [features]
 no-entrypoint = []
@@ -17,5 +17,3 @@ default = []
 
 [dependencies]
 anchor-lang = "0.25.0"
-anchor-spl = "0.25.0"
-chrono = { version = "^0.4.13", features= ["serde"] }

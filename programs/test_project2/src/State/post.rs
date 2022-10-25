@@ -1,11 +1,14 @@
 use anchor_lang::prelude::*;
+use std::hash::{Hash, Hasher};
 
+
+#[derive(Hash)]
 #[account]
 pub struct Post {
-    pub author: Pubkey,
+    // pub author: Pubkey,
     pub timestamp: i64,
-    pub topic: String,
-    pub content: String,
+    // pub topic: String,
+    // pub content: String,
 }
 // 2. Add constants for sizing propeties.
 const DISCRIMINATOR_LENGTH: usize = 8;

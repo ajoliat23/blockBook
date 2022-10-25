@@ -37,4 +37,11 @@ pub mod test_project2 {
     pub fn transfer_token(ctx: Context<TransferToken>, amount: u64) -> Result<()> {
         Instructions::transfer_token::handler(ctx, amount)
     } 
+
+    pub fn create_user_profile(ctx: Context<CreateUserProfile>, username:String) -> Result<()> {
+        Instructions::create_user_profile::handler(ctx, username)
+    } 
+    pub fn change_username(ctx: Context<ChangeUsername>, new_username:String) -> Result<()> {
+        Instructions::change_username::handler(ctx, new_username)
+    } 
 }

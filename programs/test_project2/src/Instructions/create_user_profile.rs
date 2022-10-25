@@ -21,10 +21,10 @@ The signer is the user's wallet that will be associated to the account
 We do no initialize the avatar, country and dob for now.
 */
 
-pub fn handler (ctx: Context <CreateUserProfile>, signer:Pubkey, username:String) -> Result <()> {
+pub fn handler (ctx: Context <CreateUserProfile>, username:String) -> Result <()> {
     let user_data = &mut ctx.accounts.user_account;
-    user_data.wallet = signer;
     user_data.username = username;
+	user_data.wallet = ctx.accounts.signer.key();
 	user_data.bump = *ctx.bumps.get("user_data").unwrap();
     Ok (()) 
 

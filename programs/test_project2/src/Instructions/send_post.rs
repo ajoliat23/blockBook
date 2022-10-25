@@ -27,10 +27,10 @@ pub fn SendPost (ctx: Context<SendPost>, topic: String, content: String) -> anch
     // }
 
 
-    post.author = *author.key;
+    // post.author = *author.key;
     post.timestamp = clock.unix_timestamp;
-    post.topic = topic;
-    post.content = content;
+    // post.topic = topic;
+    // post.content = content;
 
     Ok(())
 }

@@ -7,8 +7,8 @@ import { GetPrice } from './components/SolanaPrice'
 
 var usdFill: string | undefined;
 var solFill: string | undefined;
-//var convertRate: number = GetPrice();
-var convertRate: number = 35;
+var convertRate: number = GetPrice();
+//var convertRate: number = 35;
 
 function Home() {
 
@@ -18,8 +18,6 @@ function Home() {
         var usd = ((document.getElementById("usd") as HTMLInputElement).value as unknown as number);
         //this is a place holder until api / live connection works
         var sol = usd / convertRate;
-
-
         ((document.getElementById("usd") as HTMLInputElement).value as string) = "";
         ((document.getElementById("sol") as HTMLInputElement).placeholder as unknown as number) = sol;
         ((document.getElementById("usd") as HTMLInputElement).placeholder as string) = ""

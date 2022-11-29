@@ -1,6 +1,9 @@
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { info } from "console";
+import {readFileSync, writeFileSync, promises as fsPromises} from "fs";
+import {join} from "path";
+
 // Create Interfaces for Coingecko API
 export interface CoinInfo {
   price: number;
@@ -48,7 +51,6 @@ interface CoinPrice {
 }
 export default function PriceCard() {
   const [coinInfo, setCoinInfo] = useState<CoinGeckoResult>();
-  const [coinPrice, setCoinPrice] = useState<CoinGeckoResult>();
 
   useEffect(() => {
     getCoinInfo();
@@ -79,12 +81,46 @@ export default function PriceCard() {
       });
   }
 }
-export function GetPrice():number {
-  var price:number = 0;
-  fetch(`https://api.coingecko.com/api/v3/coins/solana`)
+
+async function asyncWriteFile(filename: string, data: any) {
+  try {
+    await fsPromises.writeFile(join(__dirname, filename), data, {
+      flag: 'w',
+    });
+    const contents = await fsPromises.readFile(
+      join(__dirname, filename),
+      'utf-8',
+    );
+    console.log(contents); 
+    return contents;
+  } catch (err) {
+    console.log(err);
+    return 'Something went wrong';
+  }
+}
+async function asyncReadFile(filename: string) {
+  try {
+    const result = await fsPromises.readFile(
+      join(__dirname, filename),
+      'utf-8',
+    );
+    console.log(result);
+    return result;
+  } catch (err) {
+    console.log(err);
+    return 'Something went wrong'
+  }
+}
+
+export function GetPrice():any{
+  var price;
+  fetch(`https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&include_market_cap=false&include_24hr_vol=false&include_24hr_change=false&include_last_updated_at=false&precision=false`)
     .then((res) => res.json())
-    .then((info: CoinPrice) => {
-          price = info.market_data.current_price.usd;
-      })
+    .then((data) => {
+        const json = JSON.stringify(data.solana.usd);
+        price = parseFloat(json);
+        asyncWriteFile("./SolanaCurrentPrice.txt", price);
+    });
+  price = asyncReadFile("./SolanaCurrentPrice.txt");
   return price;
 }

@@ -26,6 +26,25 @@ import {
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getDatabase } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBEQOCwBjPa1Zsb1VypTAE6XZQBildtEWU",
+  authDomain: "blockbook-50440.firebaseapp.com",
+  projectId: "blockbook-50440",
+  storageBucket: "blockbook-50440.appspot.com",
+  messagingSenderId: "758247764370",
+  appId: "1:758247764370:web:f7eb76744c5690c356514b",
+  measurementId: "G-XNJ9E8YCRH"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+export const db = getDatabase(app);
 
 // Default styles that can be overridden by your app
 require('@solana/wallet-adapter-react-ui/styles.css');

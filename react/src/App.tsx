@@ -34,11 +34,12 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "AIzaSyBEQOCwBjPa1Zsb1VypTAE6XZQBildtEWU",
   authDomain: "blockbook-50440.firebaseapp.com",
+  databaseURL: "https://blockbook-50440-default-rtdb.firebaseio.com",
   projectId: "blockbook-50440",
   storageBucket: "blockbook-50440.appspot.com",
   messagingSenderId: "758247764370",
-  appId: "1:758247764370:web:f7eb76744c5690c356514b",
-  measurementId: "G-XNJ9E8YCRH"
+  appId: "1:758247764370:web:9b2d9a7b78fc7a6156514b",
+  measurementId: "G-1FQXZQ2VQL"
 };
 
 // Initialize Firebase
